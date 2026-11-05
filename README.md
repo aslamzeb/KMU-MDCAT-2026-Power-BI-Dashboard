@@ -1,87 +1,202 @@
 # KMU-MDCAT 2026 – Power BI Data Analysis Dashboard
 
-<img width="1351" height="766" alt="KMU_MBBS_Open Merit" src="https://github.com/user-attachments/assets/35e22700-07a9-4c7d-abd8-cb6d75fbff9f" />
-<img width="1536" height="1024" alt="7aa7f108-aa6e-4a81-bf75-1aa429d5d23f" src="https://github.com/user-attachments/assets/98a8ca95-b557-4234-b7ac-84eaefc86160" />
+An interactive educational data analytics project developed using Microsoft Power BI to explore student demographics, district-wise representation, academic backgrounds, and aggregate distribution.
 
+## Dashboard Preview
 
-## Project Overview
+<img width="1672" height="941" alt="KMU-MDCAT 2026 Student Analytics Dashboard" src="https://github.com/user-attachments/assets/6a5eeb8d-3556-4fb4-9d86-3cd1b8569bde" />
+
+<img width="1351" height="766" alt="KMU MBBS Open Merit Analysis" src="https://github.com/user-attachments/assets/35e22700-07a9-4c7d-abd8-cb6d75fbff9f" />
+
+<img width="1536" height="1024" alt="KMU-MDCAT 2026 Data Analytics Infographic" src="https://github.com/user-attachments/assets/98a8ca95-b557-4234-b7ac-84eaefc86160" />
+
+---
+
+## 1. Project Overview
 
 This project presents an interactive Power BI dashboard developed to explore and analyze KMU-MDCAT 2026 student data.
 
-The dashboard provides insights into student demographics, gender distribution, district-wise representation, HSSC examination boards, examination years, and age-wise distribution.
+The dashboard provides a multidimensional analysis of student demographics, gender distribution, district-wise representation, HSSC examination boards, HSSC completion years, and age-wise distribution.
+
+A particular focus is placed on students achieving an **aggregate of 92% or above**, allowing the exploration of geographical, demographic, and educational patterns within this selected group.
 
 The primary objective is to transform educational data into meaningful visual insights that support data exploration and evidence-based interpretation.
 
-## Dataset Overview
+## 2. Dataset Overview
 
-- **Total Records:** 2,334
-- **Male Students:** 1,045 (44.77%)
-- **Female Students:** 1,289 (55.23%)
-- **Geographical Coverage:** Districts across Khyber Pakhtunkhwa and other represented categories.
-- **Examination:** KMU-MDCAT 2026
+| Description | Value |
+|---|---:|
+| Total Records | 2,334 |
+| Male Students | 1,045 (44.77%) |
+| Female Students | 1,289 (55.23%) |
+| Aggregate Threshold | ≥ 92% |
+| HSSC Completion Years | 2018–2026 (represented years) |
+| Examination | KMU-MDCAT 2026 |
 
-## Key Findings
+## 3. Key Analytical Findings
 
-### 1. Gender Distribution
-Female students account for 55.23% of the dataset, compared with 44.77% male students. This indicates higher female representation in the available records.
+### 3.1 Gender Distribution
 
-### 2. District-Wise Distribution
-Swat (268) and Mardan (251) have the highest reported counts in the district-wise visualization of students with aggregates above 92%.
+Female students account for 55.23% of the dataset, compared with 44.77% male students.
 
-Other prominently represented districts include Swabi, Lower Dir, Peshawar, Abbottabad, and Nowshera.
+- Female: 1,289 (55.23%)
+- Male: 1,045 (44.77%)
 
-### 3. HSSC Board-Wise Analysis
-BISE Peshawar has the highest representation with 538 students, followed by:
-- BISE Mardan: 383
-- BISE Swat: 339
-- BISE Abbottabad: 286
-- FBISE: 283
+Female representation exceeds male representation by approximately 10.46 percentage points.
 
-### 4. HSSC Examination-Year Analysis
-The majority of students completed their HSSC examinations in:
-- 2026: 1,447 students
-- 2025: 630 students
-- 2024: 204 students
+**Insight:** Female students constitute the larger share of the available records.
 
-Approximately 89% of the represented students belong to the 2025 and 2026 examination cohorts.
+### 3.2 District-Wise Distribution
 
-### 5. Age and Gender Analysis
-The dashboard provides a comparative view of male and female students across age groups, allowing exploration of demographic patterns.
+The district-wise visualization identifies the leading districts among students achieving an aggregate of 92% or above.
 
-## Dashboard Features
+| District | Students |
+|---|---:|
+| Swat | 268 |
+| Mardan | 251 |
+| Swabi | 164 |
+| Lower Dir | 154 |
+| Peshawar | 134 |
+| Abbottabad | 131 |
+| Nowshera | 126 |
+| Karak | 121 |
+| Mansehra | 116 |
+| Charsadda | 111 |
 
-- Interactive district slicer
-- Gender distribution donut chart
-- District-wise aggregate treemap
-- HSSC board-wise student distribution
-- HSSC examination-year analysis
-- Male and female KPI cards
-- Age-wise gender distribution
-- District-wise gender comparison matrix
+**Key Insight:** Swat and Mardan have the highest reported counts in the district-wise aggregate analysis.
 
-## Tools and Technologies
+Other represented districts include D.I. Khan, Haripur, Buner, Malakand, Shangla, Kohat, Bannu, Upper Dir, Lower Dir, and others.
 
-- Microsoft Power BI Desktop
-- Power Query for data preparation
-- DAX for calculations and measures
-- Interactive data visualization
-- Data modeling and demographic analysis
+### 3.3 HSSC Board-Wise Analysis
 
-## Analytical Value
+The HSSC board-wise distribution highlights the educational backgrounds of students represented in the dataset.
 
-This project demonstrates how Power BI can be used to convert educational datasets into interactive analytical dashboards.
+| HSSC Board | Students |
+|---|---:|
+| BISE Peshawar | 538 |
+| BISE Mardan | 383 |
+| BISE Swat | 339 |
+| BISE Abbottabad | 286 |
+| FBISE | 283 |
+| BISE Malakand | 175 |
+| BISE D.I. Khan | 130 |
+| BISE Kohat | 109 |
+| BISE Bannu | 54 |
 
-It provides a descriptive overview of student representation and academic backgrounds while highlighting geographical and demographic patterns.
+**Key Insight:** BISE Peshawar has the highest representation, followed by BISE Mardan and BISE Swat.
 
-## Important Data Interpretation Note
+### 3.4 HSSC Completion-Year Analysis
 
-The district-wise aggregate visualization represents the number of students with aggregates above 92%. These counts should not be interpreted as district-level success rates because the total number of candidates from each district is not provided in that visualization.
+One of the interesting findings of this project is the presence of students from earlier HSSC completion years who also achieved an aggregate of 92% or above.
 
-The findings are descriptive and do not establish causal relationships.
+| HSSC Completion Year | Students | Percentage |
+|---|---:|---:|
+| 2018 | 1 | 0.04% |
+| 2019 | 1 | 0.04% |
+| 2021 | 3 | 0.13% |
+| 2022 | 11 | 0.47% |
+| 2023 | 37 | 1.59% |
+| 2024 | 204 | 8.74% |
+| 2025 | 630 | 26.99% |
+| 2026 | 1,447 | 62.00% |
+| **Total** | **2,334** | **100%** |
 
-## Project Purpose
+**Key Observations:**
 
-Developed as a data analytics and visualization portfolio project to demonstrate practical applications of business intelligence in educational data analysis.
+- 2026 contributes the largest share, with 1,447 students (62.00%).
+- 2025 contributes 630 students (26.99%).
+- Approximately 89% of the represented students completed HSSC in 2025 or 2026.
+- Students from 2018 and 2019 also appear in the aggregate ≥92% group, with one student from each year.
+- Three students from the 2021 HSSC cohort also achieved an aggregate of 92% or above.
+- Students from 2022, 2023, and 2024 are also represented.
 
-**Author:** Aslam Zeb  
-**Field:** Data Science | Data Analytics | Applied Mathematics
+**Important Research Observation:**
+
+The presence of students from earlier HSSC cohorts, particularly 2018, 2019, and 2021, raises interesting questions about the relationship between HSSC completion year, the time gap before MDCAT participation, and academic performance.
+
+This observation provides an opportunity for further educational data analysis.
+
+### 3.5 Age-Wise and Gender Analysis
+
+The dashboard provides a comparative view of male and female students across different age groups.
+
+It enables exploration of:
+
+- Gender representation across age groups.
+- Age distribution patterns.
+- Differences between male and female student representation.
+- Concentration of students within particular age brackets.
+
+**Key Insight:** The dashboard indicates that student representation is concentrated mainly within the 17–20 age range.
+
+---
+
+## 4. Dashboard Features
+
+The Power BI dashboard includes the following analytical components:
+
+- Interactive district filters.
+- HSSC board filters.
+- HSSC completion-year filters.
+- Gender filters.
+- Age-group filters.
+- Gender distribution donut chart.
+- District-wise aggregate treemap.
+- HSSC board-wise distribution chart.
+- HSSC completion-year distribution.
+- Age-wise gender comparison.
+- Male and female KPI cards.
+- HSSC year-wise gender distribution table.
+- District-wise gender comparison matrix.
+- Interactive cross-filtering and data exploration.
+
+## 5. Tools and Technologies
+
+| Technology | Application |
+|---|---|
+| Microsoft Power BI Desktop | Dashboard development |
+| Power Query | Data cleaning and transformation |
+| DAX | Measures and calculations |
+| Data Modeling | Structuring analytical relationships |
+| Data Visualization | Interactive charts and reports |
+| Exploratory Data Analysis | Identifying patterns and insights |
+
+## 6. Analytical Value and Research Opportunities
+
+This project demonstrates how Business Intelligence and Data Analytics can transform educational datasets into meaningful visual information.
+
+Beyond descriptive reporting, the findings create opportunities for further investigation.
+
+Potential research directions include:
+
+1. Exploring the relationship between HSSC completion year and MDCAT aggregate.
+2. Comparing demographic patterns across districts.
+3. Investigating gender representation across different academic cohorts.
+4. Examining the educational backgrounds of students achieving high aggregates.
+5. Exploring the time gap between HSSC completion and MDCAT participation.
+
+## 7. Important Data Interpretation Notes
+
+- The district-wise figures represent counts of students with aggregates of 92% or above, not district-level success rates.
+- The HSSC year-wise figures represent students within the selected dataset of 2,334 records.
+- The presence of earlier HSSC cohorts does not establish that earlier candidates have higher or lower success rates.
+- District and board representation should not be interpreted as comparative academic performance without appropriate denominator data.
+- Findings are descriptive and do not establish causal relationships.
+
+## 8. Project Purpose
+
+Developed as an educational data analytics and visualization portfolio project to demonstrate practical applications of Business Intelligence, Applied Mathematics, and Data Science in educational data analysis.
+
+The project reflects an interest in converting raw educational data into understandable, interactive, and research-oriented insights.
+
+---
+
+## Author
+
+**Aslam Zeb**
+
+**Make and Designed by: Aslam Zeb**
+
+**Fields:** Data Science | Data Analytics | Applied Mathematics | Business Intelligence
+
+**Tools:** Microsoft Power BI | DAX | Power Query | Data Modeling
