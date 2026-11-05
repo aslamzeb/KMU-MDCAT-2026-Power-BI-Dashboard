@@ -300,5 +300,3 @@ It also demonstrates the importance of data validation and quality control in pr
 **Tools:** Microsoft Power BI | DAX | Power Query | Data Modeling
 
 **Project Category:** Educational Data Analytics | Business Intelligence | Data Visualization
-
-*This project is intended for educational, analytical, and research-oriented purposes. Student information should be anonymized where appropriate, and dataset ownership, attribution, and permissions should be respected when redistributing underlying data.*
