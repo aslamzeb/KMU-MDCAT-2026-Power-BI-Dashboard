@@ -1,5 +1,9 @@
 # KMU-MDCAT 2026 – Power BI Data Analysis Dashboard
 
+<img width="1351" height="766" alt="KMU_MBBS_Open Merit" src="https://github.com/user-attachments/assets/35e22700-07a9-4c7d-abd8-cb6d75fbff9f" />
+<img width="1536" height="1024" alt="7aa7f108-aa6e-4a81-bf75-1aa429d5d23f" src="https://github.com/user-attachments/assets/98a8ca95-b557-4234-b7ac-84eaefc86160" />
+
+
 ## Project Overview
 
 This project presents an interactive Power BI dashboard developed to explore and analyze KMU-MDCAT 2026 student data.
