@@ -1,10 +1,12 @@
 # KMU-MDCAT 2026 – Power BI Data Analysis Dashboard
 
-An interactive educational data analytics project developed using Microsoft Power BI to explore student demographics, district-wise representation, academic backgrounds, and aggregate distribution.
+An interactive educational data analytics project developed using **Microsoft Power BI** to explore student demographics, district-wise representation, academic backgrounds, gender distribution, and aggregate patterns.
+
+The project analyzes **2,334 student records with an aggregate of 92% or above**, uncovering interesting geographical, demographic, and educational patterns.
 
 ## Dashboard Preview
 
-<img width="1672" height="941" alt="KMU-MDCAT 2026 Student Analytics Dashboard" src="https://github.com/user-attachments/assets/6a5eeb8d-3556-4fb4-9d86-3cd1b8569bde" />
+<img width="1672" height="941" alt="KMU-MDCAT 2026 Student Analytics Dashboard" src="https://github.com/user-attachments/assets/ea8181a0-18f3-4463-80e4-05d6469ca293" />
 
 <img width="1351" height="766" alt="KMU MBBS Open Merit Analysis" src="https://github.com/user-attachments/assets/35e22700-07a9-4c7d-abd8-cb6d75fbff9f" />
 
@@ -16,11 +18,19 @@ An interactive educational data analytics project developed using Microsoft Powe
 
 This project presents an interactive Power BI dashboard developed to explore and analyze KMU-MDCAT 2026 student data.
 
-The dashboard provides a multidimensional analysis of student demographics, gender distribution, district-wise representation, HSSC examination boards, HSSC completion years, and age-wise distribution.
+The dashboard provides a multidimensional analysis of:
 
-A particular focus is placed on students achieving an **aggregate of 92% or above**, allowing the exploration of geographical, demographic, and educational patterns within this selected group.
+- Student demographics and gender distribution.
+- District-wise representation.
+- HSSC examination boards.
+- HSSC completion years.
+- Age-wise gender distribution.
+- Students achieving an aggregate of 92% or above.
+- Academic achievements of candidates from earlier HSSC cohorts.
 
-The primary objective is to transform educational data into meaningful visual insights that support data exploration and evidence-based interpretation.
+A particularly interesting aspect of this project is the identification of candidates from earlier HSSC cohorts (2018, 2019, and 2021) who continued their academic journey and achieved aggregates above 92% in KMU-MDCAT 2026.
+
+The primary objective is to transform educational data into meaningful visual insights that support data exploration, research, and evidence-based interpretation.
 
 ## 2. Dataset Overview
 
@@ -30,46 +40,59 @@ The primary objective is to transform educational data into meaningful visual in
 | Male Students | 1,045 (44.77%) |
 | Female Students | 1,289 (55.23%) |
 | Aggregate Threshold | ≥ 92% |
-| HSSC Completion Years | 2018–2026 (represented years) |
+| Represented HSSC Years | 8 |
+| HSSC Completion Years | 2018, 2019, 2021–2026 |
 | Examination | KMU-MDCAT 2026 |
 
 ## 3. Key Analytical Findings
 
 ### 3.1 Gender Distribution
 
-Female students account for 55.23% of the dataset, compared with 44.77% male students.
+The gender distribution indicates higher female representation in the available dataset.
 
-- Female: 1,289 (55.23%)
-- Male: 1,045 (44.77%)
+| Gender | Students | Percentage |
+|---|---:|---:|
+| Female | 1,289 | 55.23% |
+| Male | 1,045 | 44.77% |
+| **Total** | **2,334** | **100%** |
 
-Female representation exceeds male representation by approximately 10.46 percentage points.
+**Key Insights:**
 
-**Insight:** Female students constitute the larger share of the available records.
+- Female students account for 55.23% of the dataset.
+- Male students account for 44.77%.
+- Female representation exceeds male representation by approximately 10.46 percentage points.
+
+This indicates that female students constitute the larger share of the selected records.
 
 ### 3.2 District-Wise Distribution
 
-The district-wise visualization identifies the leading districts among students achieving an aggregate of 92% or above.
+The district-wise analysis identifies the leading districts among students achieving an aggregate of 92% or above.
 
-| District | Students |
-|---|---:|
-| Swat | 268 |
-| Mardan | 251 |
-| Swabi | 164 |
-| Lower Dir | 154 |
-| Peshawar | 134 |
-| Abbottabad | 131 |
-| Nowshera | 126 |
-| Karak | 121 |
-| Mansehra | 116 |
-| Charsadda | 111 |
+| Rank | District | Students |
+|---:|---|---:|
+| 1 | Swat | 268 |
+| 2 | Mardan | 251 |
+| 3 | Swabi | 164 |
+| 4 | Lower Dir | 154 |
+| 5 | Peshawar | 134 |
+| 6 | Abbottabad | 131 |
+| 7 | Nowshera | 126 |
+| 8 | Karak | 121 |
+| 9 | Mansehra | 116 |
+| 10 | Charsadda | 111 |
 
-**Key Insight:** Swat and Mardan have the highest reported counts in the district-wise aggregate analysis.
+**Key Insights:**
 
-Other represented districts include D.I. Khan, Haripur, Buner, Malakand, Shangla, Kohat, Bannu, Upper Dir, Lower Dir, and others.
+- Swat has the highest reported count, with 268 students.
+- Mardan follows with 251 students.
+- Swabi and Lower Dir contribute 164 and 154 students, respectively.
+- These districts have the highest representation in the displayed aggregate-based district analysis.
+
+Other represented districts include D.I. Khan, Haripur, Buner, Malakand, Shangla, Kohat, Bannu, Upper Dir, and others.
 
 ### 3.3 HSSC Board-Wise Analysis
 
-The HSSC board-wise distribution highlights the educational backgrounds of students represented in the dataset.
+The HSSC board-wise distribution provides insights into the educational backgrounds of students represented in the dataset.
 
 | HSSC Board | Students |
 |---|---:|
@@ -82,12 +105,22 @@ The HSSC board-wise distribution highlights the educational backgrounds of stude
 | BISE D.I. Khan | 130 |
 | BISE Kohat | 109 |
 | BISE Bannu | 54 |
+| Other | 19 |
+| IBCC | 18 |
+| **Total** | **2,334** |
 
-**Key Insight:** BISE Peshawar has the highest representation, followed by BISE Mardan and BISE Swat.
+**Key Insights:**
+
+- BISE Peshawar has the highest representation, with 538 students.
+- BISE Mardan follows with 383 students.
+- BISE Swat contributes 339 students.
+- BISE Abbottabad and FBISE contribute 286 and 283 students, respectively.
+
+This analysis highlights the distribution of students across different educational boards.
 
 ### 3.4 HSSC Completion-Year Analysis
 
-One of the interesting findings of this project is the presence of students from earlier HSSC completion years who also achieved an aggregate of 92% or above.
+One of the most interesting findings of this project is the presence of students from earlier HSSC completion years who also achieved an aggregate of 92% or above in KMU-MDCAT 2026.
 
 | HSSC Completion Year | Students | Percentage |
 |---|---:|---:|
@@ -103,24 +136,80 @@ One of the interesting findings of this project is the presence of students from
 
 **Key Observations:**
 
-- 2026 contributes the largest share, with 1,447 students (62.00%).
-- 2025 contributes 630 students (26.99%).
-- Approximately 89% of the represented students completed HSSC in 2025 or 2026.
-- Students from 2018 and 2019 also appear in the aggregate ≥92% group, with one student from each year.
-- Three students from the 2021 HSSC cohort also achieved an aggregate of 92% or above.
-- Students from 2022, 2023, and 2024 are also represented.
+1. The 2026 HSSC cohort contributes the largest share, with 1,447 students (62.00%).
+2. The 2025 cohort contributes 630 students (26.99%).
+3. Approximately 89% of represented students completed HSSC in 2025 or 2026.
+4. Students from the 2018 and 2019 HSSC cohorts are also represented in the aggregate ≥92% group.
+5. Three students from the 2021 HSSC cohort achieved an aggregate of 92% or above.
+6. Students from 2022, 2023, and 2024 are also represented.
 
 **Important Research Observation:**
 
-The presence of students from earlier HSSC cohorts, particularly 2018, 2019, and 2021, raises interesting questions about the relationship between HSSC completion year, the time gap before MDCAT participation, and academic performance.
+The presence of candidates from earlier HSSC cohorts raises interesting questions about the relationship between HSSC completion year, the time gap before MDCAT participation, and academic performance.
 
-This observation provides an opportunity for further educational data analysis.
+It also demonstrates that high academic achievement in the selected dataset is not limited to candidates from the most recent HSSC cohorts.
 
-### 3.5 Age-Wise and Gender Analysis
+### 3.5 Earlier HSSC Cohort Achievements (2018, 2019, and 2021)
+
+A closer examination of five individual student records revealed an interesting achievement pattern.
+
+All five candidates from the earlier HSSC cohorts are female and achieved an aggregate of 92% or above.
+
+**Verified aggregate and MDCAT performance:**
+
+| HSSC Year | Candidates | Aggregate Range |
+|---|---:|---:|
+| 2018 | 1 | 92.9364% |
+| 2019 | 1 | 94.1758% |
+| 2021 | 3 | 93.6333%–95.2899% |
+| **Total** | **5** | **92.9364%–95.2899%** |
+
+**Individual Achievement Details:**
+
+| HSSC Year | HSSC Marks | MDCAT Marks | Aggregate |
+|---|---:|---:|---:|
+| 2018 | 988/1100 | 171/180 | 92.9364% |
+| 2019 | 1026/1100 | 177/180 | 94.1758% |
+| 2021 | 1074/1100 | 172/180 | 95.2899% |
+| 2021 | 1076/1100 | 168/180 | 94.0303% |
+| 2021 | 1053/1100 | 171/180 | 93.6333% |
+
+**Key Findings:**
+
+- All five verified candidates are female.
+- The highest aggregate among these records is 95.2899%, achieved by a candidate from the 2021 HSSC cohort.
+- The 2019 HSSC candidate achieved 94.1758%.
+- The 2018 HSSC candidate achieved 92.9364%.
+- Their MDCAT marks range from 168 to 177 out of 180.
+
+**Motivational Insight: Success Has No Expiry Date**
+
+These records highlight the achievements of candidates who completed their HSSC examinations several years before KMU-MDCAT 2026 but continued pursuing their academic goals.
+
+Their achievements provide a meaningful reminder that educational journeys can take different paths and that determination and continued effort matter.
+
+### 3.6 Corrected Earlier-Cohort Gender Distribution
+
+The five verified student records also helped identify and correct the gender distribution for the earlier HSSC cohorts.
+
+| HSSC Year | Male | Female | Total |
+|---|---:|---:|---:|
+| 2018 | 0 | 1 | 1 |
+| 2019 | 0 | 1 | 1 |
+| 2021 | 0 | 3 | 3 |
+| **Total** | **0** | **5** | **5** |
+
+**Data Quality Improvement:**
+
+The earlier dashboard displayed an incorrect male/female distribution for these cohorts. The student-level records were used to correct the three verified year-wise breakdowns.
+
+The complete year-wise gender distribution should be reconciled against the original source dataset before being published as a final breakdown.
+
+### 3.7 Age-Wise and Gender Analysis
 
 The dashboard provides a comparative view of male and female students across different age groups.
 
-It enables exploration of:
+The analysis supports exploration of:
 
 - Gender representation across age groups.
 - Age distribution patterns.
@@ -146,8 +235,9 @@ The Power BI dashboard includes the following analytical components:
 - HSSC completion-year distribution.
 - Age-wise gender comparison.
 - Male and female KPI cards.
-- HSSC year-wise gender distribution table.
+- HSSC year-wise gender breakdown for verified earlier cohorts.
 - District-wise gender comparison matrix.
+- Earlier HSSC cohort achievement analysis.
 - Interactive cross-filtering and data exploration.
 
 ## 5. Tools and Technologies
@@ -174,20 +264,28 @@ Potential research directions include:
 3. Investigating gender representation across different academic cohorts.
 4. Examining the educational backgrounds of students achieving high aggregates.
 5. Exploring the time gap between HSSC completion and MDCAT participation.
+6. Investigating academic achievement patterns among candidates from earlier educational cohorts.
+
+These research directions could be further explored using additional candidate-level data and appropriate statistical methods.
 
 ## 7. Important Data Interpretation Notes
 
-- The district-wise figures represent counts of students with aggregates of 92% or above, not district-level success rates.
-- The HSSC year-wise figures represent students within the selected dataset of 2,334 records.
-- The presence of earlier HSSC cohorts does not establish that earlier candidates have higher or lower success rates.
+- The analysis focuses on the selected dataset of 2,334 students with aggregates of 92% or above.
+- District-wise figures represent counts, not district-level success rates.
+- HSSC year-wise figures represent students within the selected dataset, not all MDCAT candidates from each HSSC cohort.
+- The five earlier-cohort student records were individually examined and their gender distribution was corrected.
+- The full year-wise gender distribution requires reconciliation against the original source dataset.
 - District and board representation should not be interpreted as comparative academic performance without appropriate denominator data.
-- Findings are descriptive and do not establish causal relationships.
+- Individual student aggregates and MDCAT marks are descriptive observations and do not establish causal relationships.
+- Official merit ranks have not been included because verified rank information was not available in the supplied records.
 
 ## 8. Project Purpose
 
 Developed as an educational data analytics and visualization portfolio project to demonstrate practical applications of Business Intelligence, Applied Mathematics, and Data Science in educational data analysis.
 
 The project reflects an interest in converting raw educational data into understandable, interactive, and research-oriented insights.
+
+It also demonstrates the importance of data validation and quality control in producing reliable analytical reports.
 
 ---
 
@@ -200,3 +298,7 @@ The project reflects an interest in converting raw educational data into underst
 **Fields:** Data Science | Data Analytics | Applied Mathematics | Business Intelligence
 
 **Tools:** Microsoft Power BI | DAX | Power Query | Data Modeling
+
+**Project Category:** Educational Data Analytics | Business Intelligence | Data Visualization
+
+*This project is intended for educational, analytical, and research-oriented purposes. Student information should be anonymized where appropriate, and dataset ownership, attribution, and permissions should be respected when redistributing underlying data.*
